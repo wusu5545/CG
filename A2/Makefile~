@@ -1,0 +1,9 @@
+CC = g++
+LFLAGS = -Wall
+TARGET = part2
+
+runme: $(TARGET).cpp
+	$(CC)  $(LFLAGS) $(TARGET).cpp -o runme -lglut -lGLU  -lGLEW
+
+clean: 
+	  rm ./runme
